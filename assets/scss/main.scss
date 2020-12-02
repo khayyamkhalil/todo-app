@@ -1,0 +1,49 @@
+@import "./config";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+
+  font-family: "Josefin Sans", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+.header {
+  z-index: 1;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__hero {
+    position: absolute;
+    z-index: -1;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1rem;
+  }
+}
+
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
